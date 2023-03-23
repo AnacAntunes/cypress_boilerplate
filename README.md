@@ -21,9 +21,8 @@ ou
 ## DESENVOLVIDO POR:
 [Ana Carolina](https://github.com/AnacAntunes/)
 
-## RESULTADOS E STATUS
+## COBERTURA E STATUS
 
-{num_tests} testes
-{num_failures} falhas
+A cobertura de código atual dos testes é de {coverage_percentage}%.
 
 [![ci](https://github.com/AnacAntunes/cypress_initial/actions/workflows/ci.yml/badge.svg)](https://github.com/AnacAntunes/cypress_initial/actions/workflows/ci.yml)
