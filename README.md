@@ -2,7 +2,7 @@
 
 Cypress - 12.8.1
 
-### DOCUMENTAÇÃO OFICIAL
+## DOCUMENTAÇÃO OFICIAL
 
 https://docs.cypress.io/guides/getting-started/installing-cypress 
 
