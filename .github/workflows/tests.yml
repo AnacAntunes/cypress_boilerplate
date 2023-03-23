@@ -1,10 +1,10 @@
-name: ci
+name: dev
 
 on:
   push:
-    branches: [main]
+    branches: [dev]
   pull_request:
-    branches: [main]
+    branches: [dev]
 
 jobs:
   cypress:
@@ -21,14 +21,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Start Cypress tests
-        run: npx cypress run -b chrome
+      - name: Run Cypress tests with coverage
+        run: npx cypress run --reporter=cypress-istanbul-reporter
 
-      - name: Update README with test results
+      - name: Update README with test coverage
         run: |
-          TEST_OUTPUT=$(npx cypress run --quiet --json | jq '.runStats')
-          NUM_TESTS=$(echo $TEST_OUTPUT | jq '.totalTests')
-          NUM_FAILURES=$(echo $TEST_OUTPUT | jq '.totalFailed')
+          COVERAGE_OUTPUT=$(npx istanbul report --root coverage json-summary)
+          COVERAGE_PERCENTAGE=$(echo $COVERAGE_OUTPUT | jq '.total.percent')
 
-          sed -i "s/{num_tests}/$NUM_TESTS/g; s/{num_failures}/$NUM_FAILURES/g" README.md
+          sed -i "s/{coverage_percentage}/$COVERAGE_PERCENTAGE/g" README.md
+
 
