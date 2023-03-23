@@ -3,3 +3,9 @@ describe('template spec', () => {
     cy.visit('/')
   })
 })
+
+describe('My Test', () => {
+  it('Does not do much!', () => {
+    expect(true).to.equal(true)
+  })
+})

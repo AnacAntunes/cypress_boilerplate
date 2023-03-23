@@ -10,6 +10,14 @@ https://docs.cypress.io/guides/getting-started/installing-cypress
 
 npm install cypress --save-dev
 
+## EXECUTAR
+
+npm run cy:test
+
+ou
+
+*Chrome:* npx cypress run -b chrome
+
 ## DESENVOLVIDO POR:
 [Ana Carolina](https://github.com/AnacAntunes/)
 
