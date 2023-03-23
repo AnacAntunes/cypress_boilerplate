@@ -11,6 +11,7 @@ jobs:
   cypress:
     runs-on: ubuntu-latest
 
+
     steps:
       - uses: actions/checkout@v2
 
@@ -22,14 +23,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Cypress tests with coverage
-        run: npx cypress run --reporter=cypress-istanbul-reporter
-
-      - name: Update README with test coverage
-        run: |
-          COVERAGE_OUTPUT=$(npx istanbul report --root coverage json-summary)
-          COVERAGE_PERCENTAGE=$(echo $COVERAGE_OUTPUT | jq '.total.percent')
-
-          sed -i "s/{coverage_percentage}/$COVERAGE_PERCENTAGE/g" README.md
-
-
+      - name: Start Cypress tests
+        run: npx cypress run -b chrome
