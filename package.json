@@ -1,0 +1,19 @@
+{
+  "name": "cypress_boilerplate",
+  "version": "1.0.0",
+  "description": "Repositorio modelo para Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "cy:open": "npx cypress open",
+    "cy:test": "npx cypress run -b chrome"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Ana Carolina D. A. dos Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.8.1"
+  }
+}
