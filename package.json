@@ -1,7 +1,7 @@
 {
   "name": "cypress_boilerplate",
   "version": "1.0.0",
-  "description": "Repositorio modelo para Cypress",
+  "description": "Modelo de repositório para testes utilizando Cypress",
   "main": "index.js",
   "scripts": {
     "test": "",
