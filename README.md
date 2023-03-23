@@ -13,5 +13,5 @@ npm install cypress --save-dev
 ## DESENVOLVIDO POR:
 [Ana Carolina](https://github.com/AnacAntunes/)
 
-## Status
+## STATUS
 [![ci](https://github.com/AnacAntunes/cypress_initial/actions/workflows/ci.yml/badge.svg)](https://github.com/AnacAntunes/cypress_initial/actions/workflows/ci.yml)
