@@ -23,6 +23,6 @@ ou
 
 ## COBERTURA E STATUS
 
-A cobertura de código atual dos testes é de {coverage_percentage}%.
+[WIP] A cobertura de código atual dos testes é de {coverage_percentage}%.
 
 [![ci](https://github.com/AnacAntunes/cypress_initial/actions/workflows/ci.yml/badge.svg)](https://github.com/AnacAntunes/cypress_initial/actions/workflows/ci.yml)
