@@ -1,3 +1,9 @@
-cypress/screenshots/
-cypress/videos/
+cypress/evidence/*
 node_modules/
+
+# incluir a pasta reports
+!reports/*
+
+# ignorar os itens dentro da pasta reports
+reports/**/*
+!reports/.gitignore
