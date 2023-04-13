@@ -32,9 +32,8 @@ O objetivo deste repositório é fornecer um ponto de partida inicial para a cri
 ```
 ### EXECUTAR
 
-```npm run cy:test```
-ou
-*Chrome:* ```npx cypress run --e2e```
+- ```npm run cy:test```
+- ```npx cypress run --e2e```
 
 ### DESENVOLVIDO POR:
 [![Ana Carolina D. A. dos Santos](https://img.shields.io/badge/GitHub-Perfil-%23181717?logo=github)](https://github.com/AnacAntunes/)
