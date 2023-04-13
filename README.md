@@ -2,17 +2,21 @@
 
 O objetivo deste repositório é fornecer um ponto de partida inicial para a criação de testes automatizados com o framework Cypress.
 
-### DOCUMENTAÇÃO OFICIAL E VERSÃO
-[Cypress Documentation](https://docs.cypress.io/guides/getting-started/installing-cypress)
+### Recursos do Cypress
+- [Documentação Oficial do Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress)
 
-![Cypress Version](https://img.shields.io/badge/cypress-12.8.1-brightgreen)
+- ![Cypress Version](https://img.shields.io/badge/cypress-12.8.1-brightgreen)
 
-### INSTALAÇÃO
-1. Inicie um projeto node, utilizando o comando:
+
+### Instalação:
+Para iniciar um projeto node e instalar o Cypress como dependência de desenvolvimento, siga os seguintes passos:
+
+1. Inicie um projeto node:
 ```npm init```
+
 2. Instale o Cypress como depedência de dev:
 ```npm install cypress --save-dev```
-### SUGESTÃO PARA ESTRUTURA DE PASTAS
+### Sugestão de Estrutura de Pastas
 
 ```cypress/
   fixtures/
@@ -30,16 +34,18 @@ O objetivo deste repositório é fornecer um ponto de partida inicial para a cri
       example_spec.js  // Testes de interface web
   cypress.config.js    // Arquivo de configuração principal do Cypress
 ```
-### EXECUTAR
+### Executar Testes
 
 - ```npm run cy:test```
 - ```npx cypress run --e2e```
 
-### DESENVOLVIDO POR:
+### Desenvolvido por:
 [![Ana Carolina D. A. dos Santos](https://img.shields.io/badge/GitHub-Perfil-%23181717?logo=github)](https://github.com/AnacAntunes/)
 
-### COBERTURA E STATUS
+### Cobertura de Testes
 
 [WIP] A cobertura de código atual dos testes é de {coverage_percentage}%.
+
+### Status CI:
 
 [![ci](https://github.com/AnacAntunes/cypress_initial/actions/workflows/ci.yml/badge.svg)](https://github.com/AnacAntunes/cypress_initial/actions/workflows/ci.yml)
