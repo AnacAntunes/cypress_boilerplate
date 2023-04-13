@@ -3,15 +3,20 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   video: false,
   downloadsFolder: 'cypress/downloads',
-  screenshotsFolder: 'cypress/screenshots',
-  videosFolder: 'cypress/videos',
+  screenshotsFolder: 'cypress/evidence/screenshots',
+  videosFolder: 'cypress/evidence/videos',
   fixturesFolder: 'cypress/fixtures',
   chromeWebSecurity: true,
+  
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      require('cypress-mochawesome-reporter/plugin')(on);
     },
+  
     baseUrl: 'https://example.cypress.io',
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'
   },
-});
+  
+  chromeWebSecurity: false,
+  reporter: 'cypress-mochawesome-reporter',
+})
