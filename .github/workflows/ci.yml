@@ -21,4 +21,4 @@ jobs:
         run: npm install
 
       - name: Start Cypress tests
-        run: CYPRESS_IGNORE_FAILURES=true npx cypress run --e2e
+        run: npx cypress run -b chrome

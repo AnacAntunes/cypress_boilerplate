@@ -4,7 +4,9 @@ describe('Cenário de Testes WEB', () => {
     cy.visit('/')
   })
 
-  it('falhou', { retries: { runMode: 2, openMode: 2 } }, () =>{
-    cy.get('#elemento-inexistente').should('exist')
-  })
+
+  //Cenário de Falha
+  // it('falhou', () =>{
+  //   cy.get('#elemento-inexistente').should('exist')
+  // })
 })
