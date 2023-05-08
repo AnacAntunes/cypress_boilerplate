@@ -3,7 +3,7 @@
 O objetivo deste repositório é fornecer um ponto de partida inicial para a criação de testes automatizados com o framework Cypress.
 
 ### Recursos do Cypress
-- [Documentação Oficial do Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress)
+- [Documentação Oficial do Cypress](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress)
 
 - ![Cypress Version](https://img.shields.io/badge/cypress-12.8.1-brightgreen)
 
