@@ -14,7 +14,7 @@
   "author": "Ana Carolina D. A. dos Santos",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.8.1",
+    "cypress": "^12.13.0",
     "cypress-mochawesome-reporter": "^3.3.0"
   }
 }
